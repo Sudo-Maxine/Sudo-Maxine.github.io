@@ -1,0 +1,15 @@
+#game-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  #mini-game-screen {
+    margin: 20px 0;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
