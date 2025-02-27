@@ -11,14 +11,16 @@ export class GameManager {
       this.currentGameIndex = 0;
       this.score = 0;
       this.loadMiniGame(this.miniGames[this.currentGameIndex]);
+      document.getElementById('start-button').style.display = "none"
     }
   
     loadMiniGame(miniGame) {
       miniGame.init();
     }
   
-    nextMiniGame() {
+    nextMiniGame(score) {
       this.currentGameIndex++;
+      this.score += score;
       if (this.currentGameIndex < this.miniGames.length) {
         this.loadMiniGame(this.miniGames[this.currentGameIndex]);
       } else {
